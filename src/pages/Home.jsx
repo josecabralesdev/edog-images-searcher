@@ -69,7 +69,7 @@ const Home = () => {
         {loading && <Loader size='48' />}
         <div className="grid gap-4">
           <div className="w-full place-items-center grid gap-4">
-            {data && data.message?.map(dog => (
+            {data && data?.message?.map(dog => (
               <Card key={dog} dog={dog} />
             ))}
           </div>
